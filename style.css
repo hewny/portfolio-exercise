@@ -1,0 +1,90 @@
+:root {
+  --main-color: #2563eb;
+  --main-text: #111827;
+  --sub-text: #374151;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.header-image {
+  background: linear-gradient(175deg, var(--main-color) 75%, white 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 25px 0 25px;
+  position: relative;
+}
+
+.header-image > img {
+  max-width: 80%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.header-image > span {
+  position: absolute;
+  text-align: left;
+  font-size: 3.5rem;
+  color: white;
+  bottom: 8%;
+  max-width: 60%;
+}
+
+.header-quote {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  margin: 0 2%;
+  padding: 0 5%;
+  text-align: left;
+  justify-content: center;
+  color: var(--sub-text);
+  gap: 5px;
+}
+
+.header-quote > span {
+    width: 90%;
+}
+
+.header-quote span:first-child {
+    color: var(--main-text);
+    font-size: 2em;
+    text-align: center;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.header-links > a > img {
+    width: 30px;
+    height: auto;
+}
+
+@media (min-width: 750px) {
+
+}
+
+@media (min-width: 1024px) {
+
+
+}
