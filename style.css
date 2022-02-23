@@ -1,5 +1,5 @@
 :root {
-  --main-color: #2563eb;
+  --main-color: #3b82f6;
   --main-text: #111827;
   --sub-text: #374151;
 }
@@ -98,11 +98,13 @@ body {
   flex-direction: column;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  height: 375px;
+  min-height: 375px;
+  min-width: 200px;
 }
 
 .project-card > img {
   width: 100%;
+  max-height: 250px;
   object-fit: cover;
 }
 
@@ -127,6 +129,48 @@ body {
   color: var(--sub-text);
 }
 
+.footer {
+  background-color: var(--main-color);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 15px;
+  justify-content: center;
+  color: white;
+}
+
+.footer-top span:first-of-type {
+  font-size: 2rem;
+}
+
+.footer-top span:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+.footer-top span:nth-child(4), .footer-top span:nth-child(5) {
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+}
+
+.footer-icons > a > img {
+  width: 40px;
+}
+
+.footer-bottom > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 @media (min-width: 750px) {
   span {
